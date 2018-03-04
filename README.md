@@ -1,22 +1,22 @@
-# Kntnt's posts shortcode
+# Kntnt's dates shortcode
 
 Provides a shortcode for formated date and/or time.
 
 ## Description
 
-The shortcode `[posts …]` with up to two arguments outputs date and/or time.
+The shortcode `[dates …]` with up to two arguments outputs date and/or time.
 
 ### Some examples
 
-The shortcode `[posts]` outputs the time of the shortcode's execution formatted according to Settings » General.
+The shortcode `[dates]` outputs the time of the shortcode's execution formatted according to Settings » General.
 
-The shortcode `[posts "l d M Y H:i"]` outputs time of the shortcode's execution formatted according to the format string.
+The shortcode `[dates "l d M Y H:i"]` outputs time of the shortcode's execution formatted according to the format string.
 
-The shortcode `[posts format="l d M Y H:i"]` is same as above.
+The shortcode `[dates format="l d M Y H:i"]` is same as above.
 
-The shortcode `[posts "l d M Y H:i" 123456]` outputs the date and time 123456 seconds after Unix Epoch formatted according to the format string.
+The shortcode `[dates "l d M Y H:i" 123456]` outputs the date and time 123456 seconds after Unix Epoch formatted according to the format string.
 
-The shortcode `[posts format="l d M Y H:i" timestamp="123456"]` is same as above.
+The shortcode `[dates format="l d M Y H:i" timestamp="123456"]` is same as above.
 
 ### Detailed description
 
@@ -36,17 +36,17 @@ There is no setting page.
 
 ### How can I get help?
 
-If you have a questions about the plugin, and cannot find an answer here, start by looking at [issues](https://github.com/Kntnt/kntnt-posts-shortcode/issues) and [pull requests](https://github.com/Kntnt/kntnt-posts-shortcode/pulls). If you still cannot find the answer, feel free to ask in the the plugin's [issue tracker](https://github.com/Kntnt/kntnt-posts-shortcode/issues) at Github.
+If you have a questions about the plugin, and cannot find an answer here, start by looking at [issues](https://github.com/Kntnt/kntnt-date-shortcode/issues) and [pull requests](https://github.com/Kntnt/kntnt-date-shortcode/pulls). If you still cannot find the answer, feel free to ask in the the plugin's [issue tracker](https://github.com/Kntnt/kntnt-date-shortcode/issues) at Github.
 
 ### How can I report a bug?
 
-If you have found a potential bug, please report it on the plugin's [issue tracker](https://github.com/Kntnt/kntnt-posts-shortcode/issues) at Github.
+If you have found a potential bug, please report it on the plugin's [issue tracker](https://github.com/Kntnt/kntnt-date-shortcode/issues) at Github.
 
 ### How can I contribute?
 
 Contributions to the code or documentation are much appreciated.
 
-If you are unfamiliar with Git, please post it as a new issue on the plugin's [issue tracker](https://github.com/Kntnt/kntnt-posts-shortcode/issues) at Github.
+If you are unfamiliar with Git, please date it as a new issue on the plugin's [issue tracker](https://github.com/Kntnt/kntnt-date-shortcode/issues) at Github.
 
 If you are familiar with Git, please do a pull request.
 

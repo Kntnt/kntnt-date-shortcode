@@ -5,7 +5,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Kntnt Date Shortcode
- * Plugin URI:        https://github.com/TBarregren/kntnt-posts-shortcode
+ * Plugin URI:        https://github.com/TBarregren/kntnt-date-shortcode
  * Description:       Provides a shortcode for formated date and/or time.
  * Version:           1.0.0
  * Author:            Thomas Barregren
@@ -30,7 +30,7 @@ final class Plugin {
   }
   
   public function run() {
-    add_shortcode('date', [$this, 'posts']);
+    add_shortcode('date', [$this, 'date']);
   }
   
   public function date($atts, $content, $tag) {
@@ -40,7 +40,7 @@ final class Plugin {
 
     $default = array(
       'format' => "$default_date_format $default_time_format",
-      'timespamp' => '',
+      'timespamp' => time(),
     );
 
     $atts = $this->shortcode_atts($default, $atts);

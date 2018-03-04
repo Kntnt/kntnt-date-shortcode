@@ -40,20 +40,22 @@ final class Plugin {
 
     $default = array(
       'format' => "$default_date_format $default_time_format",
-      'timespamp' => time(),
+      'timestamp' => time(),
     );
-
     $atts = $this->shortcode_atts($default, $atts);
-    
+
     return date( $atts['format'], $atts['timestamp'] );
 
   }
 
   private function shortcode_atts($pairs, $atts, $shortcode = '') {
 
-    $atts = (array) $atts;
     $out = [];
     $pos = 0;
+
+    // $atts can be a string which is cast to an array. An empty string should
+    // be an empty array (not an array with an empty element as by casting).
+    $atts = $atts ? (array) $atts : [];
 
     while($name = key($pairs)) {
       $default = array_shift($pairs);
